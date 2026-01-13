@@ -1,0 +1,12 @@
+:root {
+    --color-background: grey;
+}
+
+header {
+    display: flex;
+    background-color: var(--color-background);
+}
+
+nav {
+    justify-content: space-between;
+}
