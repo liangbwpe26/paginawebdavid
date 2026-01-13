@@ -2,6 +2,10 @@
     --color-background: grey;
 }
 
+* {
+    background-color: var(--color-background);
+}
+
 .navbar {
     display: flex;
     background-color: var(--color-background);
