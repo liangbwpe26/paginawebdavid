@@ -23,3 +23,9 @@ nav {
         justify-content: space-between;
     }
 }
+
+div{
+    background-color: var(--color-background);
+    border: 1px solid black;
+    margin: 10px;
+}
