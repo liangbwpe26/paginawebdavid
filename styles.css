@@ -10,3 +10,16 @@ header {
 nav {
     justify-content: space-between;
 }
+
+* {
+    background-color: var(--color-background);
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--color-background);
+
+    .nav-links {
+        justify-content: space-between;
+    }
+}
