@@ -1,0 +1,87 @@
+/* Configuración General */
+body {
+    background-color: #121212; /* Fondo oscuro tipo gaming */
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor Grid para alinear las cajas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* LA TARJETA RGB */
+.card_rgb {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; /* Corta el gradiente sobrante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* El gradiente animado de fondo */
+.card_rgb:hover {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(
+        #fd004c, #fe9000, #fff020, #3edf4b, 
+        #3363ff, #b102f7, #fd004c
+    );
+    animation: spin 4s linear infinite;
+}
+
+/* El brillo exterior (Glow) */
+
+
+/* Contenido interno (tapa el centro del gradiente) */
+.inner-content {
+    position: absolute;
+    inset: 4px; /* Grosor del borde */
+    background: #1a1a1b; /* Color de fondo de la tarjeta */
+    border-radius: 16px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Animación de rotación */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Navbar básico para que no se vea vacío */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #1a1a1b;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
