@@ -37,18 +37,32 @@ header {
     color: #fff;
 }
 
-div{
+main div {
     background-color: var(--color-background);
     border: 1px solid black;
     margin: 10px;
-    
-    
 }
 #cajas_principales{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    place-items: center;
+
+    .card_rgb {
+        width: 300px;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        padding: 4px;;
+    }
 }
+
 nav img{
     width: 30px;
     height: 30px;
@@ -58,25 +72,10 @@ img{
     height: 100%;
 }
 
-#cajas_secundarias{
+#cajas_secundarias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-}
-
-/* El contenedor que actúa como el borde */
-/* Contenedor de la tarjeta */
-.card_rgb {
-    width: 300px; /* Puedes ajustar el ancho a tu gusto */
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111;
-    border-radius: 12px;
-    overflow: hidden; /* Importante para que el brillo no se salga */
-    padding: 4px;    /* Este padding será el "grosor" del borde */
 }
 
 /* El efecto de luz giratoria */
@@ -95,7 +94,7 @@ img{
     height: auto;
     display: block;
     border-radius: 8px; /* Un poco menos que el contenedor para que encaje */
-    z-index: 2;         /* Para que la imagen esté por encima del color */
+    z-index: 2;
 }
 
 /* Animación */
